@@ -1,0 +1,55 @@
+File: hw3.test
+Type: alloc_space
+Time: Oct 7, 2024 at 1:02pm (MSK)
+Showing nodes accounting for 2968.37MB, 99.20% of 2992.42MB total
+Dropped 23 nodes (cum <= 14.96MB)
+      flat  flat%   sum%        cum   cum%
+ 1096.42MB 36.64% 36.64%  1096.42MB 36.64%  regexp/syntax.(*compiler).inst (inline)
+  479.96MB 16.04% 52.68%   479.96MB 16.04%  io.ReadAll
+  388.54MB 12.98% 65.66%   388.54MB 12.98%  regexp/syntax.(*parser).newRegexp (inline)
+  209.27MB  6.99% 72.66%  2992.42MB   100%  hw3.SlowSearch
+  205.03MB  6.85% 79.51%  2010.01MB 67.17%  regexp.compile
+  144.52MB  4.83% 84.34%   616.06MB 20.59%  regexp/syntax.parse
+   74.60MB  2.49% 86.83%    74.60MB  2.49%  regexp.(*bitState).reset
+   58.01MB  1.94% 88.77%    58.01MB  1.94%  encoding/json.unquote (inline)
+      58MB  1.94% 90.71%   114.51MB  3.83%  regexp/syntax.(*compiler).init (inline)
+      50MB  1.67% 92.38%       50MB  1.67%  regexp/syntax.(*parser).maybeConcat
+   42.51MB  1.42% 93.80%    42.51MB  1.42%  reflect.mapassign_faststr0
+      33MB  1.10% 94.90%       83MB  2.77%  regexp/syntax.(*parser).push
+      28MB  0.94% 95.84%       28MB  0.94%  encoding/json.(*decodeState).literalStore
+   22.50MB  0.75% 96.59%   210.02MB  7.02%  encoding/json.Unmarshal
+   22.50MB  0.75% 97.34%    22.50MB  0.75%  regexp/syntax.(*Regexp).CapNames
+      22MB  0.74% 98.08%       22MB  0.74%  reflect.New
+      18MB   0.6% 98.68%    83.01MB  2.77%  encoding/json.(*decodeState).arrayInterface
+       7MB  0.23% 98.91%    65.01MB  2.17%  encoding/json.(*decodeState).literalInterface
+    4.50MB  0.15% 99.06%   184.02MB  6.15%  encoding/json.(*decodeState).object
+       4MB  0.13% 99.20%    87.01MB  2.91%  encoding/json.(*decodeState).array
+         0     0% 99.20%   184.02MB  6.15%  encoding/json.(*decodeState).unmarshal
+         0     0% 99.20%   184.02MB  6.15%  encoding/json.(*decodeState).value
+         0     0% 99.20%    65.01MB  2.17%  encoding/json.(*decodeState).valueInterface
+         0     0% 99.20%  1453.32MB 48.57%  hw3.BenchmarkFast
+         0     0% 99.20%  1459.22MB 48.76%  hw3.BenchmarkSlow
+         0     0% 99.20%  1494.38MB 49.94%  hw3.FastSearch (inline)
+         0     0% 99.20%    40.39MB  1.35%  hw3.TestSearch
+         0     0% 99.20%    39.48MB  1.32%  hw3.init.0
+         0     0% 99.20%   479.96MB 16.04%  io/ioutil.ReadAll (inline)
+         0     0% 99.20%    42.51MB  1.42%  reflect.Value.SetMapIndex
+         0     0% 99.20%    42.51MB  1.42%  reflect.mapassign_faststr
+         0     0% 99.20%    76.10MB  2.54%  regexp.(*Regexp).MatchString (inline)
+         0     0% 99.20%    76.10MB  2.54%  regexp.(*Regexp).backtrack
+         0     0% 99.20%    76.10MB  2.54%  regexp.(*Regexp).doExecute
+         0     0% 99.20%    76.10MB  2.54%  regexp.(*Regexp).doMatch (inline)
+         0     0% 99.20%  2010.01MB 67.17%  regexp.Compile (inline)
+         0     0% 99.20%  2085.61MB 69.70%  regexp.MatchString
+         0     0% 99.20%   637.15MB 21.29%  regexp/syntax.(*compiler).compile
+         0     0% 99.20%   637.15MB 21.29%  regexp/syntax.(*compiler).rune
+         0     0% 99.20%   471.54MB 15.76%  regexp/syntax.(*parser).literal
+         0     0% 99.20%  1154.42MB 38.58%  regexp/syntax.Compile
+         0     0% 99.20%   616.06MB 20.59%  regexp/syntax.Parse (inline)
+         0     0% 99.20%    39.48MB  1.32%  runtime.doInit (inline)
+         0     0% 99.20%    39.48MB  1.32%  runtime.doInit1
+         0     0% 99.20%    39.48MB  1.32%  runtime.main
+         0     0% 99.20%  2868.51MB 95.86%  testing.(*B).launch
+         0     0% 99.20%    44.04MB  1.47%  testing.(*B).run1.func1
+         0     0% 99.20%  2912.54MB 97.33%  testing.(*B).runN
+         0     0% 99.20%    40.39MB  1.35%  testing.tRunner
